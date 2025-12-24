@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"koda-b5-go/internals"
+	"koda-b5-go/internals/filereader"
 	"math"
 )
 
@@ -15,6 +16,8 @@ func main() {
 		fmt.Println("2. Tampilkan Segitiga Siku")
 		fmt.Println("3. Operasi Slice")
 		fmt.Println("4. Tampilkan Struct Data Diri")
+		fmt.Println("5. operasi read file")
+		fmt.Println("6. method")
 		fmt.Println("0. Keluar")
 		fmt.Print("Pilih menu: ")
 
@@ -34,6 +37,12 @@ func main() {
 
 		case 4:
 			internals.Struct()
+
+		case 5:
+			filereader.ReaderFile()
+
+		case 6:
+			internals.Method()
 
 		case 0:
 			fmt.Println("Program selesai 👋")
